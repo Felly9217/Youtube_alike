@@ -1,33 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_alike/utilities/ListFiles.dart';
+import 'package:youtube_alike/utilities/constants.dart';
 
 class BuildVideoList extends StatelessWidget {
-  const BuildVideoList({
-    Key key,
-  }) : super(key: key);
+
+  BuildVideoList({this.page});
+
+  final List<YoutubeData> page;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context, index){
         return Column(
           children: <Widget>[
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 200.0,
+              height: 220.0,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(homePageData[index].thumbNail),
+                    image: NetworkImage(page[index].thumbNail),
                     fit: BoxFit.cover
                   )
               ),
             ),
-            ListTile(
-              contentPadding: EdgeInsets.symmetric(vertical: 10.0),
-              leading: CircleAvatar(backgroundImage: NetworkImage(homePageData[index].avatar),),
-              title: Text(homePageData[index].title),
-              subtitle: Text('${homePageData[index].username} . ${homePageData[index].views} . ${homePageData[index].ageOfVideo}'),
-              trailing: Icon(Icons.more_vert),
+            Container(
+              decoration: kBorderDecoration,
+              child: ListTile(
+                contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
+                leading: CircleAvatar(backgroundImage: NetworkImage(page[index].avatar),),
+                title: Text(page[index].title),
+                subtitle: Text('${page[index].username} . ${page[index].views} . ${page[index].ageOfVideo}'),
+                trailing: Icon(Icons.more_vert),
+              ),
             ),
           ],
         );
@@ -36,7 +43,7 @@ class BuildVideoList extends StatelessWidget {
         height: 1.0,
         color: Colors.grey,
       ),
-      itemCount: homePageData.length,
+      itemCount: page.length,
     );
   }
 }
