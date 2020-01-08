@@ -135,3 +135,55 @@ List<YoutubeData> subscriptionsPageData = [
     ageOfVideo: '4 hours ago',
   )
 ];
+
+List<YoutubeData> inboxPageData = [
+  YoutubeData(
+    title: 'Stephen A. shocked to hear of Cowboys hiring Mike McCarthy live on air | First Take',
+    thumbNail: 'https://i.ytimg.com/vi/oNtD5N9SlCg/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l7_sFD-R_7HD4eVRrtFp4flC2vUKSv9pf3wX_g=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'EPSN',
+    ageOfVideo: '2 days ago',
+  ),
+  YoutubeData(
+    title: 'Woman Fears Daughter Allows Child to Talk to dad who Almost Killed Her - Daughter Denies Allegation',
+    thumbNail: 'https://i.ytimg.com/vi/e6ns1eW7R04/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l79JlRdgRZZccpVkxyZIjXuVRvjctvpvfafHUQ=s176-c-k-c0x00ffffff-no-rj-mo',
+    username: 'Dr.Phil',
+    ageOfVideo: '16 hours ago',
+  ),
+  YoutubeData(
+    title: '5 Simple Snacks Without Added Sugar • Tasty',
+    thumbNail: 'https://i.ytimg.com/vi/IWu3XKKsT7U/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l79wniZfBdNgKPqOAmbEOGvIcEZmxBCOYfsDcw=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'Tasty',
+    ageOfVideo: '3 hours ago',
+  ),
+  YoutubeData(
+    title: 'Luffy\'s Future In The Story! - One Piece Discussion',
+    thumbNail: 'https://i.ytimg.com/vi/KNNsUGlJKP8/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l78QspTzyrdA0pQ5iW3rC1R_jHnCda-t6WwlPw=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'Tekking101',
+    ageOfVideo: '7 hours ago',
+  ),
+  YoutubeData(
+    title: 'HUGE FISH FILLETING AND CUTTING DAY',
+    thumbNail: 'https://i.ytimg.com/vi/eSY_4A1ARak/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l7_8Qfuv4-QC_zZo4mRDDFAEmQLNKYujSYdBFA=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'Morigami',
+    ageOfVideo: '14 hours ago',
+  ),
+  YoutubeData(
+    title: 'How Hackers Can Jam Your Wi-Fi Networks',
+    thumbNail: 'https://i.ytimg.com/vi/T3Mg221FmdU/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l79JBx7ha9vUVJamAdb0_ahAW4mOfAynm2G4CQ=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'Null Byte',
+    ageOfVideo: '1 day ago',
+  ),
+  YoutubeData(
+    title: 'How 2020 candidates see their path to victory, starting in Iowa',
+    thumbNail: 'https://i.ytimg.com/vi/QTzbML8Lm-Y/hqdefault.jpg',
+    avatar: 'https://yt3.ggpht.com/a/AGF-l794wyrf-6ID9c8sSOQRoaj8eS6EkmycceeW1g=s88-c-k-c0xffffffff-no-rj-mo',
+    username: 'CBS News',
+    ageOfVideo: '1 day ago',
+  )
+];

@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:youtube_alike/screens/Library.dart';
 import 'package:youtube_alike/screens/Subscriptions.dart';
 import 'package:youtube_alike/screens/trending.dart';
 import 'package:youtube_alike/widgets/MyIconButton.dart';
 import 'package:youtube_alike/screens/home.dart';
 import 'package:youtube_alike/utilities/constants.dart';
+import 'Inbox.dart';
 
 class MyMain extends StatefulWidget {
   @override
@@ -19,8 +21,8 @@ class _MyMainState extends State<MyMain> {
     HomePage(),
     TrendingPage(),
     SubscriptionsPage(),
-    Container(child: Center(child: Text('Inbox')),),
-    Container(child: Center(child: Text('Library')),),
+    InboxPage(),
+    LibraryPage(),
   ];
 
   _myTapped(int index) {

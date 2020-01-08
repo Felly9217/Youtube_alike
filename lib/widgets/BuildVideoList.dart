@@ -4,13 +4,14 @@ import 'package:youtube_alike/utilities/constants.dart';
 
 class BuildVideoList extends StatelessWidget {
 
-  BuildVideoList({this.page});
+  BuildVideoList({@required this.page});
 
   final List<YoutubeData> page;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      padding: EdgeInsets.zero,
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context, index){
