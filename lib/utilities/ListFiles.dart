@@ -187,3 +187,30 @@ List<YoutubeData> inboxPageData = [
     ageOfVideo: '1 day ago',
   )
 ];
+
+List<YoutubeData> libraryPageData = [
+  YoutubeData(
+    title: 'The Bucks are on pace to have...',
+    thumbNail: 'https://i.ytimg.com/vi/PPIN_JU-V58/hqdefault.jpg',
+    username: 'ESPN',
+    duration: '3:42',
+  ),
+  YoutubeData(
+    title: 'BEST BEEF WELLINGTON (Bushcra...',
+    thumbNail: 'https://i.ytimg.com/vi/rF0d30gyGjU/hqdefault.jpg',
+    username: 'AlmazanKitchen',
+    duration: '13:33',
+  ),
+  YoutubeData(
+    title: 'Soulja Boy Drags Tyga, Drake,...',
+    thumbNail: 'https://i.ytimg.com/vi/Kp5A_1UAJog/hqdefault.jpg',
+    username: 'Breakfast Club Power 105.1 FM',
+    duration: '54:32',
+  ),
+  YoutubeData(
+    title: 'Tesla Smart Summon: Does It A...',
+    thumbNail: 'https://i.ytimg.com/vi/enkRALcdPb0/hqdefault.jpg',
+    username: 'UrAvgConsumer',
+    duration: '10:20',
+  )
+];

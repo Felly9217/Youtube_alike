@@ -72,7 +72,7 @@ class SubscriptionsPage extends StatelessWidget {
               ),
               Container(
                   child: MyIconButton(
-                    myIcon: Icons.keyboard_arrow_down,
+                    myIcon: Icons.expand_more,
                   ))
             ],
           ),

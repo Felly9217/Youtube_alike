@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:youtube_alike/utilities/ListFiles.dart';
 import 'package:youtube_alike/utilities/constants.dart';
 
-class BuildVideoList extends StatelessWidget {
+import 'NetworkImageBuilder.dart';
 
+class BuildVideoList extends StatelessWidget {
   BuildVideoList({@required this.page});
 
   final List<YoutubeData> page;
@@ -14,26 +15,25 @@ class BuildVideoList extends StatelessWidget {
       padding: EdgeInsets.zero,
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index){
+      itemBuilder: (context, index) {
         return Column(
           children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 220.0,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(page[index].thumbNail),
-                    fit: BoxFit.cover
-                  )
-              ),
+            NetworkImageBuilder(
+              myImage: page[index].thumbNail,
+              myWidth: MediaQuery.of(context).size.width,
+              myHeight: 220.0,
+              myDuration: page[index].duration,
             ),
             Container(
               decoration: kBorderDecoration,
               child: ListTile(
                 contentPadding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10.0),
-                leading: CircleAvatar(backgroundImage: NetworkImage(page[index].avatar),),
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(page[index].avatar),
+                ),
                 title: Text(page[index].title),
-                subtitle: Text('${page[index].username} . ${page[index].views} . ${page[index].ageOfVideo}'),
+                subtitle: Text(
+                    '${page[index].username} . ${page[index].views} . ${page[index].ageOfVideo}'),
                 trailing: Icon(Icons.more_vert),
               ),
             ),

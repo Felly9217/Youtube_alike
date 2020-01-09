@@ -16,3 +16,11 @@ const kBorderDecoration = BoxDecoration(
 );
 
 const kHeightBorderBetweenAppBarAndTabBar = 85.0;
+
+const kActiveColor = Color(0xFF404040);
+
+const kTextActiveColor = Colors.white;
+
+const kInactiveColor = Color(0xFFF0F0F0);
+
+const kTextInactiveColor = Colors.black;
